@@ -1,0 +1,45 @@
+H3 {
+    font-family: Arial, Courier;
+    color: #01487b;
+    font-size: 14pt;
+}
+
+TABLE {
+    padding: 3px;
+}
+
+TH {
+    font-family: Arial;
+    background-color: #01487b;
+    color: white;
+    border: none;
+    font-size: 11pt;
+    font-weight: normal;
+    border-bottom: 1px solid #ddd;
+}
+
+TD {
+    font-family: Arial;
+    color: #01487b;
+    border: none;
+    font-size: 11pt;
+    border-bottom: 1px solid #ddd;
+}
+
+A:link {
+    color: #01487b;
+}
+
+A:visited {
+    color: #01487b;;
+}
+
+A:hover {
+    color: #5ce;
+}
+
+P {
+    color: #01487b;
+    font-family: Arial;
+    font-size: 11pt;
+}

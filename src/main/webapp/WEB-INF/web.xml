@@ -1,0 +1,50 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+    <display-name>Text Conversion Chain</display-name>
+    <description>
+        Chain of text converters.
+    </description>
+    <context-param>
+        <param-name>dateTimeFormat</param-name>
+        <param-value>y/M/d H:m:s</param-value>
+        <description>
+            Date-time format used for parsing as well as formatting.
+            For microsecond format, ".nnnnnn" will be appended to this parameter value.
+            Reference:
+            https://docs.oracle.com/javase/8/docs/api/java/time/format/DateTimeFormatter.html#patterns
+        </description>
+    </context-param>
+    <servlet>
+        <servlet-name>ConverterServlet</servlet-name>
+        <servlet-class>nx.domain.tcc.ConverterServlet</servlet-class>
+        <init-param>
+            <param-name>converterList</param-name>
+            <param-value>converters.txt</param-value>
+            <description>
+                List of converter class names to instantiate at runtime.
+                The servlet tries to open this file at context root.
+            </description>
+        </init-param>
+        <init-param>
+            <param-name>numConverters</param-name>
+            <param-value>10</param-value>
+            <description>
+                The number of rows (converters) to show in the table.
+            </description>
+        </init-param>
+        <init-param>
+            <param-name>postDataLimit</param-name>
+            <param-value>4000</param-value>
+            <description>
+                Maximum number of characters allowed for the textbox.
+            </description>
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ConverterServlet</servlet-name>
+        <url-pattern>/form</url-pattern>
+    </servlet-mapping>
+</web-app>

@@ -1,0 +1,60 @@
+H3 {
+    font-family: Arial, Courier;
+    color: #01487b;
+    font-size: 13pt;
+}
+
+A {
+    font-family: Arial, Courier;
+    color: #01487b;
+    font-size: 10pt;
+}
+
+TH {
+    font-family: Arial;
+    color: #ffffff;
+    background-color: #01487b;
+    border: 1px solid #014870;
+    font-size: 10pt;
+}
+
+TD {
+    font-family: Arial;
+    color: #01487b;
+    border: 1px solid #014870;
+    font-size: 10pt;
+}
+
+SELECT {
+    width: 100%;
+}
+
+TEXTAREA {
+    font-size: 10pt;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+.conversionTable {
+    width: 100%;
+    table-layout: fixed;
+    cell-padding: 1px;
+    border: 1px solid #014870;
+    border-collapse: collapse;
+ }
+
+.rowHeader {
+    width: 50px;
+}
+
+.converter {
+    width: 260px;
+}
+
+.result {
+    word-break:break-all;
+    min-width: 700px;
+}
+
