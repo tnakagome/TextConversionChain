@@ -98,3 +98,12 @@ when the servlet is initialized.
 
 If you do not need certain converters, just remove them from the file. For example, local date-time converters
 will be redundant if this application is deployed in UTC time zone.
+
+### Enhancements
+In order to add a converter to the program:
+
+1. Creating a converter class by inheriting from `nx.domain.tcc.AbstractConverter` and put it below `nx.domain.tcc.converters`.
+1. Implement `convert()` method in your new converter class.
+1. Write something for the `shortHelp` field. This will appear in the usage link (usage.jsp).
+1. Insert your converter's class name to `src/main/webapp/converters.txt`.
+1. Build and deploy!
