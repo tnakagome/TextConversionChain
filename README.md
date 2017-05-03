@@ -34,14 +34,14 @@ For tomcat, copy tcc.war into webapps directory.
 
 ### Text Formats
 |Value Type|Format|
-|-|-|
+|---|---|
 |Date/Time|`y/M/d H:m:s` (See Customizations below.)|
 |Date/Time (microsecond)|`y/M/d H:m:s.nnnnnn` (See Customizations below.)|
 |Hexadecimal|Should not be prefixed with "0x". Use the "Remove 0x" converter to remove it from source.|
 
 ### Converters
 |Conveter|Description|
-|-|-|
+|---|---|
 |text → base64|Encode UTF-8 string using BASE64 encoder.|
 |base64 → text (ISO-2022-JP)|Decode BASE64 string and interpret as ISO-2022-JP encoding.|
 |base64 → text (UTF-8)|Decode BASE64 string and interpret as UTF-8 encoding.|
@@ -75,6 +75,7 @@ For tomcat, copy tcc.war into webapps directory.
 |text → URL encode (SJIS)|URL-encode string using SJIS character encoding.|
 |text → URL encode (EUC-JP)|URL-encode string using EUC-JP character encoding.|
 |text → URL encode (ISO-2022-JP)|URL-encode string using ISO-2022-JP character encoding.|
+
 \* "local date-time" is interpreted according to the server's time zone.
 
 ### Customizations
@@ -82,7 +83,7 @@ For tomcat, copy tcc.war into webapps directory.
 Several parameters are defined in web.xml. They can be changed if required.
 
 |Parameter|Default Value|Description|
-|-|-|-|
+|---|---|---|
 |converterList|converters.txt|Converters shown in the pull-down menus are defined in this text file.|
 |dateTimeFormat|`y/M/d H:m:s`|Date and time format for parsing and printing. See [here](https://docs.oracle.com/javase/8/docs/api/java/time/format/DateTimeFormatter.html#patterns) for details.|
 |numConverters|10|The number of converters (pull-down menus) to show in the conversion table.|
