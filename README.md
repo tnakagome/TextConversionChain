@@ -102,8 +102,10 @@ will be redundant if this application is deployed in UTC time zone.
 ### Enhancements
 In order to add a converter to the program:
 
-1. Creating a converter class by inheriting from `nx.domain.tcc.AbstractConverter` and put it below `nx.domain.tcc.converters`.
-1. Implement `convert()` method in your new converter class.
-1. Write something for the `shortHelp` field. This will appear in the usage link (usage.jsp).
+1. Create a converter class by inheriting from `nx.domain.tcc.AbstractConverter` and put it below `nx.domain.tcc.converters`.
+1. Implement a no-argument constructor for your new converter class.
+This will be the only constructor invoked because of the way it is instantiated.
+1. Write something for the `shortHelp` field in the constructor. This will appear in the usage link (usage.jsp).
+1. Implement `convert()` method that performs conversion.
 1. Insert your converter's class name to `src/main/webapp/converters.txt`.
 1. Build and deploy!
