@@ -49,19 +49,23 @@ For tomcat, copy tcc.war into webapps directory.
 |upper case → lower case|Convert upper case characters to lower case.|
 |hex → decimal|Convert a hexadecimal number to a decimal number. Source number must not have 0x prefix.|
 |decimal → hex|Convert a decimal number to a hexadecimal number.|
-|hex → text (UTF-8)|Treat a hexadecimal string as UTF-8 character codes and translate into a UTF-8 string.|
-|text (UTF-8) → hex|Convert UTF-8 encoded string into its hexadecimal representation.|
+|hex (character codes) → UTF-8 text|Treat a hexadecimal string as UTF-8 character codes and translate into a UTF-8 string.|
+|UTF-8 text → hex (character codes)|Convert UTF-8 encoded string into its hexadecimal representation.|
 |Remove 0x|Remove all "0x" from source string.|
 |Encode non-hexadecimal chars|Convert characters into UTF-8 codes. 0-9, A-F, and a-f remain as they are.|
 |text → HTML entity reference|Encode space, <, >, " and & into HTML character entity reference like "&amp;nbsp;".|
 |Visualize control codes|Visualize control codes like CR, LF, TAB.|
 |unix clock → UTC date-time|Convert Unix epoch integer into UTC date-time string.|
 |unix clock → local date-time|Convert Unix epoch integer into local date-time string.|
+|unix clock (millisec) → UTC date-time|Convert Unix epoch integer with millisecond into UTC date-time string.|
+|unix clock (millisec) → Local date-time|Convert Unix epoch integer with millisecond into Local date-time string.|
 |unix clock (microsec) → UTC date-time|Convert Unix epoch integer with microsecond into UTC date-time string.|
 |unix clock (microsec) → local date-time|Convert Unix epoch integer with microsecond into local date-time string.|
 |UTC date-time → unix clock|Convert UTC date-time string into Unix epoch integer.|
 |local date-time → unix clock|Convert local date-time string into Unix epoch integer.|
-|UTC date-time (microsec) → unix clock|Convert UTC date-time string with microsecond into Unix epoch integer.|
+|UTC date-time (millisec) → unix clock|Convert UTC date-time string with millisecond into Unix epoch integer.|
+|Local date-time (millisec) → unix clock|Convert Local date-time string with millisecond into Unix epoch integer.|
+|UTC date-time| (microsec) → unix clock|Convert UTC date-time string with microsecond into Unix epoch integer.|
 |local date-time (microsec) → unix clock|Convert local date-time string with microsecond into Unix epoch integer.|
 |FQDN → IPv4 (DNS lookup)|Perform DNS lookup to get an IPv4 address for FQDN.|
 |little endian → IPv4|Convert little-endian hexadecimal string into IPv4 address.|
