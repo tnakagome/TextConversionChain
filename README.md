@@ -65,7 +65,7 @@ For tomcat, copy tcc.war into webapps directory.
 |local date-time → unix clock|Convert local date-time string into Unix epoch integer.|
 |UTC date-time (millisec) → unix clock|Convert UTC date-time string with millisecond into Unix epoch integer.|
 |Local date-time (millisec) → unix clock|Convert Local date-time string with millisecond into Unix epoch integer.|
-|UTC date-time| (microsec) → unix clock|Convert UTC date-time string with microsecond into Unix epoch integer.|
+|UTC date-time (microsec) → unix clock|Convert UTC date-time string with microsecond into Unix epoch integer.|
 |local date-time (microsec) → unix clock|Convert local date-time string with microsecond into Unix epoch integer.|
 |FQDN → IPv4 (DNS lookup)|Perform DNS lookup to get an IPv4 address for FQDN.|
 |little endian → IPv4|Convert little-endian hexadecimal string into IPv4 address.|
