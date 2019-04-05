@@ -14,6 +14,7 @@ public abstract class DateToEpochConverter extends EpochConverter {
             LocalDateTime parsed = LocalDateTime.parse(source, dateFormat);
             return Long.toString(parsed.atZone(timezone).toEpochSecond());
         } catch (Exception e) {
+        	System.out.format("DateToEpochConverter.convert(): conversion failed. %s\n", e.getMessage());
             return null;
         }
     }

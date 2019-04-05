@@ -21,10 +21,14 @@ nx.domain.tcc.converters.ControlCodeConverter
 nx.domain.tcc.converters.Separator
 nx.domain.tcc.converters.clock.utc.EpochToUtcDateConverter
 nx.domain.tcc.converters.clock.local.EpochToLocalDateConverter
+nx.domain.tcc.converters.clock.utc.MillisecToUtcDateConverter
+nx.domain.tcc.converters.clock.local.MillisecToLocalDateConverter
 nx.domain.tcc.converters.clock.utc.MicrosecToUtcDateConverter
 nx.domain.tcc.converters.clock.local.MicrosecToLocalDateConverter
 nx.domain.tcc.converters.clock.utc.UtcDateToEpochConverter
 nx.domain.tcc.converters.clock.local.LocalDateToEpochConverter
+nx.domain.tcc.converters.clock.utc.UtcDateToMillisecConverter
+nx.domain.tcc.converters.clock.local.LocalDateToMillisecConverter
 nx.domain.tcc.converters.clock.utc.UtcDateToMicrosecConverter
 nx.domain.tcc.converters.clock.local.LocalDateToMicrosecConverter
 

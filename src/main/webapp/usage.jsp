@@ -19,6 +19,11 @@
 (See <A href="https://docs.oracle.com/javase/8/docs/api/java/time/format/DateTimeFormatter.html#patterns">here</A> for details.)</TD>
 </TR>
 <TR>
+<TD>Date/Time (millisecond)</TD>
+<TD><%= System.getProperty("millisecDateTimeFormat") %>
+(See <A href="https://docs.oracle.com/javase/8/docs/api/java/time/format/DateTimeFormatter.html#patterns">here</A> for details.)</TD>
+</TR>
+<TR>
 <TD>Date/Time (microsecond)</TD>
 <TD><%= System.getProperty("microsecDateTimeFormat") %>
 (See <A href="https://docs.oracle.com/javase/8/docs/api/java/time/format/DateTimeFormatter.html#patterns">here</A> for details.)</TD>

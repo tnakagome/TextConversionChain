@@ -5,7 +5,7 @@ import nx.domain.tcc.AbstractConverter;
 public class LittleEndianToIPv4Converter extends AbstractConverter {
     public LittleEndianToIPv4Converter() {
         super("LittleEndianToIPv4", "little endian → IPv4");
-        this.shortHelp = "Convert little-endian hexadecimal string into IPv4 address.";
+        this.shortHelp = "Convert little-endian hexadecimal (319ac40a) into IPv4 address (10.196.154.49).";
     }
 
     @Override

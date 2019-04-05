@@ -5,7 +5,7 @@ import nx.domain.tcc.AbstractConverter;
 public class BigEndianlToIPv4Converter extends AbstractConverter {
     public BigEndianlToIPv4Converter() {
         super("BigEndianlToIPv4", "big endian → IPv4");
-        this.shortHelp = "Convert big-endian hexadecimal string into IPv4 address.";
+        this.shortHelp = "Convert big-endian hexadecimal (0ac49a31) into IPv4 address (10.196.154.49).";
     }
 
     @Override

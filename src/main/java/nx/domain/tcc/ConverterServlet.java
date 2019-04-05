@@ -42,6 +42,7 @@ public class ConverterServlet extends HttpServlet {
     private int        numConverters           = 10;
     private String     postDataLimit           = "1000";
     private String     dateTimeFormat          = "y/M/d H:m:s";
+    private String     millisecDateTimeFormat  = "y/M/d H:m:s.SSS";
     private String     microsecDateTimeFormat  = "y/M/d H:m:s.nnnnnn";
     private Converters converters;
 
@@ -66,11 +67,13 @@ public class ConverterServlet extends HttpServlet {
         param = getInitParameter("dateTimeFormat");
         if (param != null) {
             dateTimeFormat = param;
+            millisecDateTimeFormat = param + ".nnn";
             microsecDateTimeFormat = param + ".nnnnnn";
         }
 
         // Referenced by clock converters and usage.jsp
         System.setProperty("dateTimeFormat",         dateTimeFormat);
+        System.setProperty("millisecDateTimeFormat", millisecDateTimeFormat);
         System.setProperty("microsecDateTimeFormat", microsecDateTimeFormat);
 
         initConverters();

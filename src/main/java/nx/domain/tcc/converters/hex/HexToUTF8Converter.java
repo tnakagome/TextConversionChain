@@ -8,7 +8,7 @@ import nx.domain.tcc.Encoding;
  */
 public class HexToUTF8Converter extends AbstractConverter {
     public HexToUTF8Converter() {
-        super("HexToUTF8text", "hex → text (UTF-8)");
+        super("HexToUTF8text", "hex (character codes) → UTF-8 text");
         this.shortHelp = "Treat a hexadecimal string as UTF-8 character codes and translate into a UTF-8 string.";
     }
 

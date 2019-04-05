@@ -16,6 +16,7 @@ public abstract class DateToMicrosecConverter extends MicrosecConverter {
             String        subsecond = String.format("%06d", parsed.getNano());
             return Long.toString(parsed.atZone(timezone).toEpochSecond()) + subsecond;
         } catch (Exception e) {
+        	System.out.format("DateToMicrosecConverter.convert(): conversion failed. %s\n", e.getMessage());
             return null;
         }
     }

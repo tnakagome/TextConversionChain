@@ -32,6 +32,7 @@ public abstract class MicrosecToDateConverter extends MicrosecConverter {
                 return microsecFormat.format(time);
             }
         } catch (Exception e) {
+        	System.out.format("MicrosecToDateConverter.convert(): conversion failed. %s\n", e.getMessage());
             return null;
         }
     }

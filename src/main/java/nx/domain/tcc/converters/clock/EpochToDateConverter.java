@@ -17,6 +17,7 @@ public abstract class EpochToDateConverter extends EpochConverter {
             LocalDateTime time    = LocalDateTime.ofInstant(instant, timezone);
             return dateFormat.format(time);
         } catch (Exception e) {
+        	System.out.format("EpochToDateConverter.convert(): conversion failed. %s\n", e.getMessage());
             return null;
         }
     }
