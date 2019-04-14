@@ -55,6 +55,7 @@ For tomcat, copy tcc.war into webapps directory.
 |Encode non-hexadecimal chars|Convert characters into UTF-8 codes. 0-9, A-F, and a-f remain as they are.|
 |text → HTML entity reference|Encode space, <, >, " and & into HTML character entity reference like "&amp;nbsp;".|
 |Visualize control codes|Visualize control codes like CR, LF, TAB.|
+|Remove control codes|Remove control codes like CR, LF, TAB.|
 |unix clock → UTC date-time|Convert Unix epoch integer into UTC date-time string.|
 |unix clock → local date-time|Convert Unix epoch integer into local date-time string.|
 |unix clock (millisec) → UTC date-time|Convert Unix epoch integer with millisecond into UTC date-time string.|

@@ -17,6 +17,7 @@ nx.domain.tcc.converters.hex.HexPrefixRemover
 nx.domain.tcc.converters.hex.EncodeNonHexChars
 nx.domain.tcc.converters.EntityReferenceConverter
 nx.domain.tcc.converters.ControlCodeConverter
+nx.domain.tcc.converters.ControlCodeRemover
 
 nx.domain.tcc.converters.Separator
 nx.domain.tcc.converters.clock.utc.EpochToUtcDateConverter

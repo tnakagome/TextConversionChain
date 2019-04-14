@@ -17,7 +17,7 @@ public class ControlCodeConverter extends AbstractConverter {
     }
 
     public ControlCodeConverter() {
-        super("ControlCode", "Visualize control codes");
+        super("ControlCodeConverter", "Visualize control codes");
         this.shortHelp = "Visualize control codes like CR, LF, TAB.";
     }
 
