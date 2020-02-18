@@ -56,6 +56,9 @@ For tomcat, copy tcc.war into webapps directory.
 |text → HTML entity reference|Encode space, <, >, " and & into HTML character entity reference like "&amp;nbsp;".|
 |Visualize control codes|Visualize control codes like CR, LF, TAB.|
 |Remove control codes|Remove control codes like CR, LF, TAB.|
+|Seconds → Minutes:Seconds|Convert seconds to minutes:seconds|
+|Seconds → Hours:Minutes:Seconds|Convert seconds to hours:minutes:seconds|
+|Seconds → Days+Hours:Minutes:Seconds|Convert seconds to days+hours:minutes:seconds|
 |unix clock → UTC date-time|Convert Unix epoch integer into UTC date-time string.|
 |unix clock → local date-time|Convert Unix epoch integer into local date-time string.|
 |unix clock (millisec) → UTC date-time|Convert Unix epoch integer with millisecond into UTC date-time string.|
