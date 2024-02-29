@@ -3,8 +3,10 @@
 
 nx.domain.tcc.converters.Empty
 nx.domain.tcc.converters.base64.encoders.Base64Encoder
-nx.domain.tcc.converters.base64.decoders.ISO_2022_JP
 nx.domain.tcc.converters.base64.decoders.UTF_8
+nx.domain.tcc.converters.base64.decoders.ISO_2022_JP
+nx.domain.tcc.converters.base64.decoders.Shift_JIS
+nx.domain.tcc.converters.base64.decoders.EUC_JP
 nx.domain.tcc.converters.ToUpperConverter
 nx.domain.tcc.converters.ToLowerConverter
 
