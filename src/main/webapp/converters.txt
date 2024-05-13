@@ -56,3 +56,7 @@ nx.domain.tcc.converters.url.encoders.UTF_8
 nx.domain.tcc.converters.url.encoders.Shift_JIS
 nx.domain.tcc.converters.url.encoders.EUC_JP
 nx.domain.tcc.converters.url.encoders.ISO_2022_JP
+
+nx.domain.tcc.converters.Separator
+nx.domain.tcc.converters.imap.ModifiedUtf7Decoder
+nx.domain.tcc.converters.imap.ModifiedUtf7Encoder
