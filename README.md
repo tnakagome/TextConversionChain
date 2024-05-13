@@ -54,6 +54,7 @@ For tomcat, copy tcc.war into webapps directory.
 |Remove 0x|Remove all "0x" from source string.|
 |Encode non-hexadecimal chars|Convert characters into UTF-8 codes. 0-9, A-F, and a-f remain as they are.|
 |text → HTML entity reference|Encode space, <, >, " and & into HTML character entity reference like "&amp;nbsp;".|
+|Entity references → bytes|Decode entity references like "&#nnn;" and "&#xnnn;" into bytes (minus sign can be used).|
 |Visualize control codes|Visualize control codes like CR, LF, TAB.|
 |Remove control codes|Remove control codes like CR, LF, TAB.|
 |Seconds → Minutes:Seconds|Convert seconds to minutes:seconds|
@@ -83,6 +84,8 @@ For tomcat, copy tcc.war into webapps directory.
 |text → URL encode (SJIS)|URL-encode string using SJIS character encoding.|
 |text → URL encode (EUC-JP)|URL-encode string using EUC-JP character encoding.|
 |text → URL encode (ISO-2022-JP)|URL-encode string using ISO-2022-JP character encoding.|
+|Modified UTF-7 (IMAP) → text|Decode modified UTF-7 (IMAP) string to text|
+|text → Modified UTF-7 (IMAP)|Encode text to modified UTF-7 format (IMAP)|
 
 \* "local date-time" is interpreted according to the server's time zone.
 
