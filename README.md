@@ -42,9 +42,14 @@ For tomcat, copy tcc.war into webapps directory.
 ### Converters
 |Conveter|Description|
 |---|---|
-|text → base64|Encode UTF-8 string using BASE64 encoder.|
-|base64 → text (ISO-2022-JP)|Decode BASE64 string and interpret as ISO-2022-JP encoding.|
-|base64 → text (UTF-8)|Decode BASE64 string and interpret as UTF-8 encoding.|
+|text (UTF-8) → Base64|Encode UTF-8 string using BASE64 encoder.|
+|text (ISO-2022-JP) → Base64|Encode ISO-2022-JP string using BASE64 encoder.|
+|text (SJIS) → Base64|Encode SJIS string using BASE64 encoder.|
+|text (EUC-JP) → Base64|Encode EUC-JP string using BASE64 encoder.|
+|Base64 → text (UTF-8)|Decode BASE64 string and interpret as UTF-8 encoding.|
+|Base64 → text (ISO-2022-JP)|Decode BASE64 string and interpret as ISO-2022-JP encoding.|
+|Base64 → text (SJIS)|Decode BASE64 string and interpret as SJIS encoding.|
+|Base64 → text (EUC-JP)|Decode BASE64 string and interpret as EUC-JP encoding.|
 |lower case → upper case|Convert lower case characters to upper case.|
 |upper case → lower case|Convert upper case characters to lower case.|
 |hex → decimal|Convert a hexadecimal number to a decimal number. Source number must not have 0x prefix.|
