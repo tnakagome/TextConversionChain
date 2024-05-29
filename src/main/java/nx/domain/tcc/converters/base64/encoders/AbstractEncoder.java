@@ -14,7 +14,7 @@ public class AbstractEncoder extends AbstractConverter {
     public AbstractEncoder(final Encoding encoding) {
         super("Base64Encoder" + encoding.name, "text (" + encoding.name + ") → Base64");
         this.encoder   = Base64.getEncoder();
-        this.shortHelp = "Encode " + encoding.name + "string using Base64 encoder";
+        this.shortHelp = "Encode " + encoding.name + " string using Base64 encoder";
         this.charset   = Charset.forName(encoding.name);
     }
 
