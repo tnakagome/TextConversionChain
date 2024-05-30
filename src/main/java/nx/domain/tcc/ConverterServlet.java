@@ -109,7 +109,7 @@ public class ConverterServlet extends HttpServlet {
                     continue;
 
                 Class<?> clazz = Class.forName(className);
-                AbstractConverter converter = (AbstractConverter)clazz.newInstance();
+                AbstractConverter converter = (AbstractConverter)clazz.getDeclaredConstructor().newInstance();
                 converters.register(converter);
             }
         }

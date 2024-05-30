@@ -62,6 +62,7 @@ For tomcat, copy tcc.war into webapps directory.
 |Entity references → bytes|Decode entity references like "&#nnn;" and "&#xnnn;" into bytes (minus sign can be used).|
 |Visualize control codes|Visualize control codes like CR, LF, TAB.|
 |Remove control codes|Remove control codes like CR, LF, TAB.|
+|Remove linear white space chars|Remove space, CR, LF, and TAB.|
 |Seconds → Minutes:Seconds|Convert seconds to minutes:seconds|
 |Seconds → Hours:Minutes:Seconds|Convert seconds to hours:minutes:seconds|
 |Seconds → Days+Hours:Minutes:Seconds|Convert seconds to days+hours:minutes:seconds|

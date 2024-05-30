@@ -24,6 +24,7 @@ nx.domain.tcc.converters.EntityReferenceConverter
 nx.domain.tcc.converters.EntityReferenceDecoder
 nx.domain.tcc.converters.ControlCodeConverter
 nx.domain.tcc.converters.ControlCodeRemover
+nx.domain.tcc.converters.LwsRemover
 
 nx.domain.tcc.converters.Separator
 nx.domain.tcc.converters.hms.SecondsToMinutesConverter
