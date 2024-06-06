@@ -37,7 +37,7 @@
         </init-param>
         <init-param>
             <param-name>postDataLimit</param-name>
-            <param-value>4000</param-value>
+            <param-value>131072</param-value>
             <description>
                 Maximum number of characters allowed for the textbox.
             </description>
