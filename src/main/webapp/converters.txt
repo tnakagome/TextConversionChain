@@ -5,10 +5,12 @@ nx.domain.tcc.converters.Empty
 nx.domain.tcc.converters.base64.encoders.UTF_8
 nx.domain.tcc.converters.base64.encoders.ISO_2022_JP
 nx.domain.tcc.converters.base64.encoders.Shift_JIS
+nx.domain.tcc.converters.base64.encoders.MS932
 nx.domain.tcc.converters.base64.encoders.EUC_JP
 nx.domain.tcc.converters.base64.decoders.UTF_8
 nx.domain.tcc.converters.base64.decoders.ISO_2022_JP
 nx.domain.tcc.converters.base64.decoders.Shift_JIS
+nx.domain.tcc.converters.base64.decoders.MS932
 nx.domain.tcc.converters.base64.decoders.EUC_JP
 nx.domain.tcc.converters.ToUpperConverter
 nx.domain.tcc.converters.ToLowerConverter

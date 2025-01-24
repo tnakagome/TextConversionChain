@@ -1,7 +1,7 @@
 package nx.domain.tcc;
 
 public enum Encoding {
-    ISO_2022_JP("ISO-2022-JP"), EUC_JP("EUC-JP"), SJIS("SJIS"), UTF8("UTF-8");
+    ISO_2022_JP("ISO-2022-JP"), EUC_JP("EUC-JP"), SJIS("SJIS"), MS932("MS932"), UTF8("UTF-8");
 
     public final String name;
 
