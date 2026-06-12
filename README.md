@@ -96,6 +96,7 @@ For tomcat, copy tcc.war into webapps directory.
 |text → Modified UTF-7 (IMAP)|Encode text to modified UTF-7 format (IMAP)|
 |Quoted Printable → text|Decode Quoted Printable string to text|
 |text → Quoted Printable (UTF-8)|Encode text using Quoted Printable (UTF-8)|
+
 \* "local date-time" is interpreted according to the server's time zone.
 
 ### Customizations
