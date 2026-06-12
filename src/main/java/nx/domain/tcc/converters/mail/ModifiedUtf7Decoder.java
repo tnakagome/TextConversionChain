@@ -1,4 +1,4 @@
-package nx.domain.tcc.converters.imap;
+package nx.domain.tcc.converters.mail;
 
 import org.apache.james.imap.api.display.CharsetUtil;
 
