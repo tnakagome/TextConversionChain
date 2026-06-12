@@ -94,7 +94,8 @@ For tomcat, copy tcc.war into webapps directory.
 |text → URL encode (ISO-2022-JP)|URL-encode string using ISO-2022-JP character encoding.|
 |Modified UTF-7 (IMAP) → text|Decode modified UTF-7 (IMAP) string to text|
 |text → Modified UTF-7 (IMAP)|Encode text to modified UTF-7 format (IMAP)|
-
+|Quoted Printable → text|Decode Quoted Printable string to text|
+|text → Quoted Printable (UTF-8)|Encode text using Quoted Printable (UTF-8)|
 \* "local date-time" is interpreted according to the server's time zone.
 
 ### Customizations
