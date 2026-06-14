@@ -27,7 +27,7 @@ Use maven to build the application and tcc.war will be generated.
 For tomcat, copy tcc.war into webapps directory.
 
 ### Usage
-1. Enter the source string that needs conversion (up to 4000 bytes, but customizable in web.xml.)
+1. Enter the source string that needs conversion (up to 131,072 bytes, but customizable in web.xml.)
 2. Choose converters to apply from the pull down menus.
 3. Press 'convert' button.
 4. The results will be shown in the right column of the table.
@@ -121,8 +121,11 @@ If you do not need certain converters, just remove them from the file. For examp
 will be redundant if this application is deployed in UTC time zone.
 
 ### Enhancements
-In order to add a converter to the program:
+This is a mini-framework for text converters. Adding a new converter does not require a lot of work.
+Just create a converter class, and add its fully qualified name to the converters.txt file,
+then the new class will appear automatically on screen. See previous commits for examples.
 
+#### Detailed steps
 1. Create a converter class by inheriting from `nx.domain.tcc.AbstractConverter` and put it below `nx.domain.tcc.converters`.
 1. Implement a no-argument constructor for your new converter class.
 This will be the only constructor invoked because of the way it is instantiated.
