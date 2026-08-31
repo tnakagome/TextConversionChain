@@ -108,7 +108,7 @@ Several parameters are defined in web.xml. They can be changed if required.
 |converterList|converters.txt|Converters shown in the pull-down menus are defined in this text file.|
 |dateTimeFormat|`y/M/d H:m:s`|Date and time format for parsing and printing. See [here](https://docs.oracle.com/javase/8/docs/api/java/time/format/DateTimeFormatter.html#patterns) for details.|
 |numConverters|10|The number of converters (pull-down menus) to show in the conversion table.|
-|postDataLimit|4000|The number of bytes that can be entered as the source text.|
+|postDataLimit|131072|The number of bytes that can be entered as the source text.|
 
 #### Rearranging Converters
 Converters shown in a pull-down menu can be customized without code change.
