@@ -40,7 +40,7 @@ For tomcat, copy tcc.war into webapps directory.
 |Hexadecimal|Should not be prefixed with "0x". Use the "Remove 0x" converter to remove it from source.|
 
 ### Converters
-|Conveter|Description|
+|Converter|Description|
 |---|---|
 |text (UTF-8) → Base64|Encode UTF-8 string using BASE64 encoder.|
 |text (ISO-2022-JP) → Base64|Encode ISO-2022-JP string using BASE64 encoder.|
@@ -83,7 +83,7 @@ For tomcat, copy tcc.war into webapps directory.
 |FQDN → IPv4 (DNS lookup)|Perform DNS lookup to get an IPv4 address for FQDN.|
 |little endian → IPv4|Convert little-endian hexadecimal string into IPv4 address.|
 |big endian → IPv4|Convert big-endian hexadecimal string into IPv4 address.|
-|IPv4 → big endian|Convert an IPv4 address into big-endian hexadecimal striing.|
+|IPv4 → big endian|Convert an IPv4 address into big-endian hexadecimal string.|
 |URL encoded (UTF-8) → text|Decode URL-encoded string. % encoded codes are interpreted as UTF-8.|
 |URL encoded (SJIS) → text|Decode URL-encoded string. % encoded codes are interpreted as SJIS.|
 |URL encoded (EUC-JP) → text|Decode URL-encoded string. % encoded codes are interpreted as EUC-JP.|
